@@ -1,0 +1,48 @@
+module projectCar1(output reg motorFin1 , output reg motorFin2 ,output reg  motorFin3 ,  output reg
+				motorFin4 , output reg motorBin1 ,output reg motorBin2 ,output reg motorBin3 ,output reg motorBin4 , input IR1 , input IR2);
+
+
+ always@(IR1 or IR2)
+ begin 
+ 
+	 if(IR1 == 1)
+	 begin
+	 	motorFin1 <= 1;
+		motorFin2 <= 1;
+		motorFin3 <= 1;
+		motorFin4 <= 0;
+		motorBin1 <= 1;
+		motorBin2 <= 1;
+		motorBin3 <= 1;
+		motorBin4 <= 0;
+	 end
+	else 
+	begin
+	if(IR2 == 1)
+	begin 
+	motorFin1 <= 0;
+	motorFin2 <= 0;
+	motorFin3 <= 0;
+	motorFin4 <= 0;
+	motorBin1 <= 0;
+	motorBin2 <= 0;
+	motorBin3 <= 0;
+	motorBin4 <= 0;
+	end
+	else 
+	begin 
+	motorFin1 <= 1;
+	motorFin2 <= 0;
+	motorFin3 <= 1;
+	motorFin4 <= 0;
+	motorBin1 <= 1;
+	motorBin2 <= 0;
+	motorBin3 <= 1;
+	motorBin4 <= 0;
+	end
+	end
+	
+	
+	end
+	endmodule
+	

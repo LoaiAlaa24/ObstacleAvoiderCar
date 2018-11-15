@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "motorFin1",
+					"strict" : false
+				},
+				{
+					"name" : "motorFin2",
+					"strict" : false
+				},
+				{
+					"name" : "motorFin3",
+					"strict" : false
+				},
+				{
+					"name" : "motorFin4",
+					"strict" : false
+				},
+				{
+					"name" : "IR1",
+					"strict" : false
+				},
+				{
+					"name" : "IR2",
+					"strict" : false
+				},
+				{
+					"name" : "IR3",
+					"strict" : false
+				},
+				{
+					"name" : "IR4",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
